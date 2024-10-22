@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мой блог</title>
+    <!-- Фавикон -->
+    <link rel="icon" href="./favicon.svg" type="image/png" />
+    <!-- Сброс стилей по умолчанию -->
+    <link rel="stylesheet" href="./reset.css" />
+    <!-- Шрифт "Inter" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Подключение файла с основными стилями -->
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+
+  <body>
+    <section class="blog">
+      <div class="container">
+        <div class="blog__wrap">
+          <div class="blog__article-publishing">
+            <h2 class="blog__heading">Новый пост</h2>
+            <div class="blog__inputs">
+              <input
+                type="text"
+                class="js-blog__input-heading input blog__input-heading"
+                required
+                placeholder="Заголовок"
+              />
+              <textarea
+                class="js-blog__input-article input blog__input-article"
+                rows="5"
+                required
+                placeholder="Напиши пост"
+              ></textarea>
+            </div>
+            <button class="js-blog__btn btn blog__btn">Опубликовать</button>
+            <div
+              class="js-error-message error-message"
+            ></div>
+          </div>
+          <div class="blog__feed">
+            <h2 class="blog__heading">Лента</h2>
+            <div class="js-blog__articles-wrap blog__articles-wrap">
+              <article class="js-blog__article article blog__article">
+                <p class="js-blog__article__date blog__article__date"></p>
+                <h3 class="blog__article__heading"></h3>
+                <p class="blog__article__text">Тут пока пусто...</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
